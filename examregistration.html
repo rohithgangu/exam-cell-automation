@@ -38,7 +38,7 @@ select{
   box-sizing: border-box;
 }
 
-button {
+.button {
   background-color: #34abeb;
   color: white;
   padding: 14px 20px;
@@ -47,11 +47,16 @@ button {
   cursor: pointer;
   width: 100%;
 }
-button:hover {
+.button:hover {
   opacity: 0.8;
+}
+.button[disabled]:hover{
+    opacity: 1;
 }
     </style>
     <script src="js/name.js"></script>
+    <script src="js/exam.js"></script>
+
 </head>
 <body>
     <div class="header">
@@ -63,14 +68,14 @@ button:hover {
     
     <div class="topnav">
         <a href="home.html" class="navhome">Home</a>
-        <a href="#" class="navlog">Logout</a>
+        <a href="signin.html" class="navlog">Logout</a>
         <span class="navname" id="stuname"></span>
     </div>
     
     <div class="regis" style="background-color:#f1f1f1 ;">
         <h1>Exam Registration</h1>
         <div class="regisfrom">
-            <form action="">
+            <form action="home.html" onsubmit="return examvalidation()">
                 <label for="examtype">select Exam : </label>
                 <select name="exams" id="">
                     <option value="Institute of Banking Personnel Selection">Institute of Banking Personnel Selection</option>
@@ -80,14 +85,16 @@ button:hover {
                 </select>
                 <br><br>
                 <label for="reg">College register number : </label>
-                <input type="number">
+                <input type="number" id="collegeid" required>
                 <br><br>
                 <label for="fname">First Name : </label>
-                <input type="text" id="fname" name="fname">
+                <input type="text" id="fname" name="fname" required>
+                <label for="mname">Middle Name : </label>
+                <input type="text" id="mname" name="mname">
                 <label for="lname">Lirst Name : </label>
-                <input type="text" id="lname" name="lname"> <br><br>
+                <input type="text" id="lname" name="lname" required> <br><br>
                 <label for="mail">Email Address : </label>
-                <input type="text" id="fname" name="fname">
+                <input type="email" id="fname" name="fname" required>
                 <br><br>
                 <label for="edu">Education</label>
                 <select name="exams" id="">
@@ -97,17 +104,18 @@ button:hover {
                 </select>
                 <br><br>
                 <label for="dob">Date of Birth</label>
-                <input type="date" >
+                <input type="date" id="dob" required>
                 <br><br>
                 <label for="photo">Photo</label>
-                <input type="file" id="photo">
+                <input type="file" id="photo" required>
                 <br><br>
-                <input type="checkbox">
+                <input type="checkbox" id="terms" required value="1" onclick="termschange(this);">
                 <label for=""><b>I have agreed to terms and conditions</b></label>
                 <br><br>
-                <button type="button" class="studentlogin" onclick="examvalidation()">Register</button>
+                <input type="submit"  class="button"  id="submit" value="Register" disabled>
             </form>
         </div>
     </div>
+    <script src="js/exam.js"></script>
 </body>
 </html>

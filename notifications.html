@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/homecss.css">
+    <style>
+        table{
+            font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+        }
+
+        td, th {
+
+  text-align: left;
+  padding: 20px;
+
+}
+th .date{
+    width :20%;
+
+}
+th.exam{
+    width:80%
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+    </style>
+    <script src="js/name.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h2 class="headerh2">Exam Cell Automation</h2>
+        <img class="gitamlogo" src="img/gitam-logo2.png" alt="">
+    </div>
+
+
+    
+    <div class="topnav">
+        <a href="home.html" class="navhome">Home</a>
+        <a href="index.html" class="navlog">Logout</a>
+        <span class="navname" id="stuname"></span>
+    </div>
+    <div style="text-align: center;"><h1>Notifications</h1></div>
+    <table>
+        <tr>
+            <th class="exam">Exam Name</th>
+            <th class="date">last date</th>
+        </tr>
+        <tr>
+            <th><a href="https://byjus.com/bank-exam/ibps/">Institute of Banking Personnel Selection</a></th>
+            <th>31-4-2021</th>
+        </tr>
+        <tr>
+            <th><a href="https://byjus.com/bank-exam/rbi-exam/">RBI Bank exam</a></th>
+            <th>20-5-2021</th>
+        </tr>
+        <tr>
+            <th><a href="https://www.shiksha.com/it-software/bit-mca-entrance-exam">BIT MCA Entrance Exam 2021</a></th>
+            <th>31-5-2021</th>
+        </tr>
+        <tr>
+            <th><a href="https://hirepro.in/all-products?utm_source=SoftwareSuggest&utm_medium=PPC&utm_campaign=PPC_Campaign_brand">HirePro</a></th>
+            <th>15-6-2021</th>
+        </tr>
+    </table>
+</body>
+</html>

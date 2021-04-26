@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3"
+  },
+  "devDependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

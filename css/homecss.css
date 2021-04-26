@@ -1,0 +1,70 @@
+.header{    
+    width: 100%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    display: inline-block;
+}
+
+
+.headerh2{
+    position: relative;
+    width: 70%;
+    float: left;
+}
+.gitamlogo{
+    width: 25%;
+    height: 70px;
+    float: right;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+
+.topnav{
+    overflow: hidden;
+  background-color: rgb(88, 193, 241);
+    
+}
+.topnav a,span{
+    float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav span{
+    float: right;
+    display: block;
+    text-align: center;
+    padding-right: 30px;
+    margin: 0px;
+    
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: red;
+  }
+
+.maincont{
+    padding-top: 100px;
+}
+
+.container{
+    width: 100px;
+    margin-left: 150px;
+    float: left;
+}
+img{
+    width: 100px;
+    height:100px;
+    float: left;
+}
+.text{
+    text-align:center;
+}

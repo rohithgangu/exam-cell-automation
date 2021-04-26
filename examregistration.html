@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/homecss.css">
+    <style>
+        .regis{
+            padding: 20px;
+            display: block;
+            text-align:center;
+        }
+        form {
+    border: 3px solid #f1f1f1;
+    width: fit-content;
+    display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+
+  }
+  input[type=text], input[type=password],input[type=email] , input[type=number] ,input[type=file],input[type=date]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+select{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #34abeb;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+    </style>
+    <script src="js/name.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h2 class="headerh2">Exam Cell Automation</h2>
+        <img class="gitamlogo" src="img/gitam-logo2.png" alt="">
+    </div>
+
+
+    
+    <div class="topnav">
+        <a href="home.html" class="navhome">Home</a>
+        <a href="#" class="navlog">Logout</a>
+        <span class="navname" id="stuname"></span>
+    </div>
+    
+    <div class="regis" style="background-color:#f1f1f1 ;">
+        <h1>Exam Registration</h1>
+        <div class="regisfrom">
+            <form action="">
+                <label for="examtype">select Exam : </label>
+                <select name="exams" id="">
+                    <option value="Institute of Banking Personnel Selection">Institute of Banking Personnel Selection</option>
+                    <option value="RBI Bank exam">RBI Bank exam</option>
+                    <option value="BIT MCA Entrance Exam 2021">BIT MCA Entrance Exam 2021</option>
+                    <option value="HirePro">HirePro</option>
+                </select>
+                <br><br>
+                <label for="reg">College register number : </label>
+                <input type="number">
+                <br><br>
+                <label for="fname">First Name : </label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Lirst Name : </label>
+                <input type="text" id="lname" name="lname"> <br><br>
+                <label for="mail">Email Address : </label>
+                <input type="text" id="fname" name="fname">
+                <br><br>
+                <label for="edu">Education</label>
+                <select name="exams" id="">
+                    <option value="Post Graduation">Post Graduation</option>
+                    <option value="under Graduation">under Graduation</option>
+                    <option value="pharmacy">pharmacy</option>
+                </select>
+                <br><br>
+                <label for="dob">Date of Birth</label>
+                <input type="date" >
+                <br><br>
+                <label for="photo">Photo</label>
+                <input type="file" id="photo">
+                <br><br>
+                <input type="checkbox">
+                <label for=""><b>I have agreed to terms and conditions</b></label>
+                <br><br>
+                <button type="button" class="studentlogin" onclick="examvalidation()">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exams</title>
+    <link rel="stylesheet" href="css/homecss.css">
+    <style>
+        table{
+            font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+        }
+
+        td, th {
+
+  text-align: left;
+  padding: 20px;
+
+}
+th .date{
+    width :20%;
+
+}
+th.exam{
+    width:80%
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+    </style>
+    <script src="js/name.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h2 class="headerh2">Exam Cell Automation</h2>
+        <img class="gitamlogo" src="img/gitam-logo2.png" alt="">
+    </div>
+
+
+    
+    <div class="topnav">
+        <a href="home.html" class="navhome">Home</a>
+        <a href="index.html" class="navlog">Logout</a>
+        <span class="navname" id="stuname"></span>
+    </div>
+<table style="width:100%">
+  <tr>
+    <th>S.No</th>
+    <th>Title Of Exam</th>
+    <th>Room</th> 
+    <th>Exam Date</th>
+     <th>Venue</th>
+     
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Java Basics</td>
+    <td>504B</td>
+    <td>30-04-21</td>
+    <td>Gayatri College</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>HTML&CSS</td>
+    <td>20A</td>
+    <td>15-05-21</td>
+    <td>AU</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Ruby On Rails</td>
+    <td>101</td>
+    <td>20-05-21</td>
+    <td>Anits</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>PHP & My SQl</td>
+    <td>801R</td>
+    <td>25-06-21</td>
+    <td>Gitam</td>
+  </tr>
+</table>
